@@ -22,6 +22,7 @@ var Item = sequelize.define('items', {
   freezeTableName: true, quoteIdentifiers: false, timestamps: false
 });
 
+// Create the table afresh each time
 Item.sync({force: true}).then(function () {
   // Table created
   return Item.create({
