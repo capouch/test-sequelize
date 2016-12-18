@@ -9,6 +9,10 @@
   "author": "Brian Capouch",
   "license": "ISC",
   "dependencies": {
+    "express-graphql": "^0.5.4",
+    "graphql": "^0.8.1",
+    "graphql-relay": "^0.4.4",
+    "graphql-sequelize": "^4.0.5",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.27.0"

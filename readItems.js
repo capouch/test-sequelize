@@ -25,5 +25,7 @@ var Item = sequelize.define('items', {
 
   Item.findAll().then(function(projects) {
   // projects will be an array of all Project instances
-  console.log(JSON.stringify(projects));
+  projects.forEach(function(item) {
+    console.log(item["description"] + ' Price: ' + item["price"] + '\n')
+  })
 });
