@@ -1,4 +1,4 @@
-var Item = require('sequelize/items.js')
+var Item = require('../sequelize/item.js')
 
 // Create the table afresh each time
 Item.sync({force: true}).then(function () {
